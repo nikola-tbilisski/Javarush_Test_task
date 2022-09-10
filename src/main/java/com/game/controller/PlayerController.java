@@ -102,7 +102,7 @@ public class PlayerController {
     }
 
     //delete player
-    @DeleteMapping("players/{id}")
+    @DeleteMapping("/players/{id}")
     @ResponseBody
     public ResponseEntity<Map<String, Boolean>> deletePlayer(@PathVariable(name = "id") Long id) {
         return ResponseEntity.ok(playerService.deletePlayer(id));
